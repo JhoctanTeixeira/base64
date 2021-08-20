@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Formulário Treino</title>
 </head>
 <body>
+    <div class="container">
+        <form action="" method="" id="f1-form" >
+            
+            <fieldset class="f-fild" >
+                <legend>Contato</legend>
+                <br>
+                <br>
+
+                <label for="name">Nome: </label>
+                <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+                <br>
+                <br>
+
+                <label for="email">Email: </label>
+                <input id="email" type="text" name="email"placeholder="Digite seu email" required>
+                <br>
+                <br>
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone" required>
+                <br>
+                <br>
+                <label for="url">Seu site</label>
+                <input type="url" name="url" id="url" placeholder="Seu site ex: linkedin, GitHub">
+                <br>
+                <br>
+                <label for="raca">Sua cor</label>
+                <input type="text" list="raca" placeholder="Sua etnia" />
+               
+                <datalist id="raca">
+                    <option>Negro</option>
+                    <option>Branco</option>
+                    <option>Amarelo</option>
+                    <option>Parda</option>
+                </datalist>
+                <br>
+                <br>
+
+                <label for="senha">Senha: </label>
+                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                <br>
+                <br>
+                <label for="data">Data: </label>
+                <input type="date" name="date" id="date" required>
+                <br>
+                <br>
+                
+                <label for="message">Mensagem</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <br>
+
+                <button type="submit" name="btn1" form="f1-form" required>Enviar</button>
+                <button type="reset" name="btn2" form="f1-form" required>Limpar</button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
     
 </body>
 </html>
