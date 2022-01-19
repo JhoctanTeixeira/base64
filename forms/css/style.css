@@ -4,9 +4,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
-    margin-top: 5%;
+    color: rgb(144, 144, 144);
+    margin-top: 2%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 2%;
     background-color: #f3f3f3;
 }
 
@@ -15,25 +17,31 @@
     border: 10px solid rgb(209, 215, 219);
 } 
 .labelText{
-   width: 100%;
-   margin-bottom: 10%;
+ margin-bottom: 10px;
 }
 .txtArea{
     border-color: rgb(209, 215, 219);
     width: 100%;
+    outline: none;
+    margin-top: 10px;
 }
 .checkText{
     border-color: rgb(209, 215, 219);
+    margin-bottom: 10px;
 }
 .InputText{
+    color: rgb(144, 144, 144);
     width: 100%;
     padding: 10px;
+    /* border: 3px solid #555; */
     border-color: rgb(209, 215, 219); 
     border-top: none;
     border-left: none ;
     border-right: none;
     margin-bottom: 10px;
+    outline: none;
 }
+
 ::placeholder{
     text-align: right;
 }
