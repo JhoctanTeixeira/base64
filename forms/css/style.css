@@ -13,21 +13,27 @@
 }
 
 .f-fild{
-    padding: 30px;
+    padding: 23px;
     border: 10px solid rgb(209, 215, 219);
+    border-radius: 4px;
 } 
 .labelText{
  margin-bottom: 10px;
+ width: 100%;
 }
 .txtArea{
     border-color: rgb(209, 215, 219);
     width: 100%;
     outline: none;
     margin-top: 10px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(144, 144, 144);
 }
 .checkText{
     border-color: rgb(209, 215, 219);
     margin-bottom: 10px;
+
 }
 .InputText{
     color: rgb(144, 144, 144);
@@ -47,15 +53,36 @@
 }
 
 .titleText{
+    /* width: 100%; */
     text-align: center;
     font-size: 30px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* input[type=text, password], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+.btnForm {
+    border: none;
+    background-color: rgb(209, 215, 219);
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(66, 72, 77);
+    margin-top: 2%;
+    /* margin-left: 23%; */
     border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  } */
+}
+.divBtn{
+    /* text-align: center; */
+}
+.codText{
+    color: rgb(144, 144, 144);
+    outline: none;
+    text-align: center;
+    width: 50%;
+    border: solid ;
+    border-color: rgb(209, 215, 219);
+    padding: 10px;
+}
+.divCod{
+    padding: 10px;
+}

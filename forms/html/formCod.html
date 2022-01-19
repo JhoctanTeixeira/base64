@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="" id="formid">
+            <fieldset class="f-fild">
+                <p class="titleText">Form Cod</p>
+                <div>
+                    <label class="labelText" for="message">Mensagem para codificar:</label>
+                    <textarea class="txtArea" name="message" id="messageid" cols="30" rows="10" required></textarea>
+                </div>
+               
+                <div class="divCod">
+                    <select class="codText" name="cod" id="codid">
+                        <option  value="cesar">césar</option>
+                        <option value="base64">base64</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="labelText" for="césar">Codificar</label>
+                    <input type="checkbox" onclick="Mudarestado('divcod')" name="césar" id="cesarid">
+                    <label class="labelText" for="césar">Decodificar</label>
+                    <input class="checkText" onclick="Mudarestado('divdev')"type="checkbox" name="base64" id="base64id">
+                </div>
+                <div id="divcod">
+                    <button type="" class="btnForm">Codificar Mensagem !</button>
+                </div>
+                <div id="divdev">
+                    <button type="" class="btnForm">Decodificar Mensagem !</button>
+                </div>
+              
+                <!-- <div class="divBtn" id="divbt">
+                    <button class="btnForm" type="submit" id="enviarid" onclick="Enviar();" value="Enviar">Enviar</button>
+                    <button class="btnForm" type="reset" name="btn2">Limpar</button>
+                </div> -->
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
