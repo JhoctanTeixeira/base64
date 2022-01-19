@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #f3f3f3;
+}
+
+.f-fild{
+    padding: 30px;
+    border: 10px solid rgb(209, 215, 219);
+} 
+.labelText{
+   width: 100%;
+   margin-bottom: 10%;
+}
+.txtArea{
+    border-color: rgb(209, 215, 219);
+    width: 100%;
+}
+.checkText{
+    border-color: rgb(209, 215, 219);
+}
+.InputText{
+    width: 100%;
+    padding: 10px;
+    border-color: rgb(209, 215, 219); 
+    border-top: none;
+    border-left: none ;
+    border-right: none;
+    margin-bottom: 10px;
+}
+::placeholder{
+    text-align: right;
+}
+
+.titleText{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* input[type=text, password], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  } */
