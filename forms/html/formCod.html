@@ -11,38 +11,50 @@
 
 <body>
     <div class="container">
-        <form class="formCod"action="" method="" id="formid">
+        <form class="formCod" action="" method="POST" id="formid" onsubmit="return false;">
             <fieldset class="f-fild">
                 <p class="titleText">FORM COD</p>
-                <div>
+                <div id="pai">
                     <label class="labelText" for="message">Mensagem para codificar:</label>
-                    <textarea class="txtArea" name="message" id="messageid" cols="30" rows="10" required></textarea>
+                    <input  type="text" class="txtArea" name="message" id="inCe" required></input>
+                    <!-- <input style="display: none;" type="text" class="txtArea" name="cesarTxt" id="inBase" required></input> -->
                 </div>
                
                 <div class="divSel">
-                    <label class="labelText"for="selectcod">Selecione uma opção:</label>
+                    <label class="labelText" for="selectcod">Selecione uma opção:</label>
                     <br>
                     <br>
-                    <select class="codText" name="cod" id="codid">
-                        <option  value="cesar">césar</option>
-                        <option value="base64">base64</option>
+                    <select class="codText" name="select" id="select">
+                        <option  selected>Selecionar</option>
+                        <option  value="inCe">césar</option>
+                        <option  value="inBase">base64</option>
                     </select>
                 </div>
-                <div class="">
-                    <label class="labelText" for="césar">Codificar</label>
-                    <input class="checkText" type="checkbox" onclick="Mudarestado('btCod')" name="césar" id="cesarid">
-                    <label class="labelText" for="césar">Decodificar</label>
-                    <input class="checKText" onclick="Mudarestado('btDec')"type="checkbox" name="base64" id="base64id">
-                </div>
+            
+                <di>
+                    <label >
+                        <input type="radio" onclick="Mudarestado('btCod')" name="césar" id="cesarid">
+                    <span>Codificar</span>
+                    </label>
+                    <label >
+                        <input onclick="Mudarestado('btDec')"type="radio" name="base64" id="base64id">
+                        <span >Decodificar</span>
+                    </label>
+                    
+                </di>
+
                 <div >
-                    <button style="display:none" type="" class="btnForm" id="btCod">Codificar Mensagem !</button>
-                    <button style="display:none" type="" class="btnForm" id="btDec">Decodificar Mensagem !</button>
+                    <button onclick="encriptar(this)" style="display:none" type="submit" class="btnForm" id="btCod">Codificar Mensagem !</button>
+                    <button onclick="desencriptar(this)" style="display:none" type="submit" class="btnForm" id="btDec">Decodificar Mensagem !</button>
+                    <button  style="display:none" type="reset" class="btnForm" id="limpTxt">Limpar Tudo !</button>
                 </div>
-              
-                <!-- <div class="divBtn" id="divbt">
-                    <button class="btnForm" type="submit" id="enviarid" onclick="Enviar();" value="Enviar">Enviar</button>
-                    <button class="btnForm" type="reset" name="btn2">Limpar</button>
-                </div> -->
+                <div>
+                    <br>
+                    <span>Mensagem codificada ou descodificada</span>
+                    <br>
+                    <p class="txtArea" id="output" style="color:azure">
+                    </p>
+                </div>
             </fieldset>
         </form>
     </div>

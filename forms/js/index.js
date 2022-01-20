@@ -1,26 +1,37 @@
-// MinhaPrimeiraFuncao("Javascript is so easy to learn");
+// Base64 fuctions
 
-// function MinhaPrimeiraFuncao(msg){
-//     alert("A mensagem foi enviada: "+msg);
-// }
-
-function Enviar() {
-    var nome = document.getElementById("nameid");
-
-    if (nome.value != "") {
-        alert('Obrigado sr()a ' + nome.value + 'os seus dados foram encaminhados com sucesso')
-    }
+function encriptar(elemento) {
+    var palavra = document.getElementsByTagName("input")[0].value;
+    var palavraCodificada = btoa(palavra);
+    document.getElementById("output").innerHTML = palavraCodificada;
 }
+
+function desencriptar(elemento) {
+    var palavra = document.getElementsByTagName("input")[0].value;
+    var palavraCodificada = atob(palavra);
+    document.getElementById("output").innerHTML = palavraCodificada;
+}
+// FIM Base64 fuctions
+
+// Mostrar e esconder buttons 
 function Mudarestado(el) {
     var display = document.getElementById(el).style.display;
-    if(display == "none")
+    if (display == "none")
         document.getElementById(el).style.display = 'block';
     else
         document.getElementById(el).style.display = 'none';
 }
-var string = "DevPleno"
-var emBase64 = btoa(string)
-console.log(emBase64)
 
-var deBase64 = atob(emBase64)
-console.log(deBase64)
+// fim Mostrar e esconder buttons 
+$(document).ready(function(){
+
+    $('#select').on('change', function(){
+        var selectValor = '#'+$(this).val();
+
+        $('#pai').children('div').hide();
+        $('#pai').children(selectValor).show();
+    });
+});
+// Cesar 
+
+// Fim Cesar
