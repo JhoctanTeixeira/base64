@@ -1,88 +1,123 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
 }
-.container{
-    color: rgb(144, 144, 144);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+.container {
     margin-top: 2%;
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 2%;
-    background-color: #f3f3f3;
 }
 
-.f-fild{
+.f-fild {
+    --border-width: 3px;
     padding: 23px;
-    border: 10px solid rgb(209, 215, 219);
-    border-radius: 4px;
-} 
-.labelText{
- margin-bottom: 10px;
- width: 100%;
-}
-.txtArea{
-    border-color: rgb(209, 215, 219);
+    position: relative;
+    font-weight: lighter;
+    color: white;
+    background: #222;
     width: 100%;
+    border: none;
+}
+
+.formCod ::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(60deg,
+                hsl(224, 85%, 66%),
+                hsl(269, 85%, 66%),
+                hsl(314, 85%, 66%),
+                hsl(359, 85%, 66%),
+                hsl(44, 85%, 66%),
+                hsl(89, 85%, 66%),
+                hsl(134, 85%, 66%),
+                hsl(179, 85%, 66%));
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: calc(2 * var(--border-width));
+        animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.txtArea {
+    background: rgb(44, 43, 43);
+    border: 3px solid black;
+    width: 90%;
     outline: none;
     margin-top: 10px;
     padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(144, 144, 144);
+    color: white;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 }
-.checkText{
-    border-color: rgb(209, 215, 219);
-    margin-bottom: 10px;
 
-}
-.InputText{
+.InputText {
     color: rgb(144, 144, 144);
     width: 100%;
     padding: 10px;
-    /* border: 3px solid #555; */
-    border-color: rgb(209, 215, 219); 
+    border-color: rgb(209, 215, 219);
     border-top: none;
-    border-left: none ;
+    border-left: none;
     border-right: none;
     margin-bottom: 10px;
     outline: none;
 }
 
-::placeholder{
+::placeholder {
     text-align: right;
 }
 
-.titleText{
+.titleText {
     /* width: 100%; */
     text-align: center;
     font-size: 30px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5%;
 }
+
 .btnForm {
-    border: none;
-    background-color: rgb(209, 215, 219);
+    width: 240px;
+    border: 1px solid;
+    background-color:rgb(44, 43, 43);
     padding: 10px;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
     font-size: 16px;
-    color: rgb(66, 72, 77);
+    color: white;
     margin-top: 2%;
     /* margin-left: 23%; */
     border-radius: 4px;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 }
-.divBtn{
-    /* text-align: center; */
-}
-.codText{
-    color: rgb(144, 144, 144);
+
+.codText {
+    color: white;
+    margin-bottom: 2%;
+    background: rgb(44, 43, 43);
     outline: none;
     text-align: center;
     width: 50%;
-    border: solid ;
-    border-color: rgb(209, 215, 219);
+    border: 1px solid;
     padding: 10px;
-}
-.divCod{
-    padding: 10px;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 }
