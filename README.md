@@ -14,7 +14,7 @@
 </p>
 
 #### Page :
- <img alt="#base64" title="#base64" src="./forms/img/project.png" style= "width: 100px"/>
+ <img alt="#base64" title="#base64" src="./forms/img/project.png"/>
 #### 🛠 Tecnologias
 As seguintes ferramentas foram usadas na construção do projeto:
 
