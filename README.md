@@ -15,7 +15,8 @@
 
 #### Page :
  <img alt="#base64" title="#base64" src="./img/project.png"/>
-#### 🛠 Tecnologias
+🛠 Tecnologias
+<br>
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [HTML5](https://www.devmedia.com.br/o-que-e-o-html5/25820) <img align = "center" alt = "HTML" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg ">
